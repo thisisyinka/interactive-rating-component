@@ -1,0 +1,174 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+input[type='button'],
+button {
+  font-family: 'Overpass', sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hide {
+  display: none;
+}
+
+.box {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);
+  width: 80%;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-top: 160px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.icon {
+  /* background-color: hsl(216, 12%, 54%); */
+  background-color: hsl(213, 19%, 22%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message,
+h2,
+.ratings,
+button {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 15px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.each-rating {
+  background-color: hsl(213, 19%, 22%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.each-rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+}
+
+/* .each-rating:active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+} */
+
+/* .rating {
+  outline: none;
+  background: none;
+  border: none;
+  color: hsl(217, 12%, 63%);
+} */
+
+/* .rating:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+} */
+
+.submit-rating {
+  width: 100%;
+}
+
+button {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: none;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  color: hsl(25, 97%, 53%);
+}
+
+/**THANK YOU**/
+.thankyou-wrapper {
+  display: none;
+}
+
+.thankyou-wrapper-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-wrapper .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating-text {
+  background-color: hsl(213, 19%, 22%);
+  color: hsl(25, 97%, 53%);
+  padding: 7px 15px;
+  margin: 25px 0 15px 0;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.thanks-heading {
+  margin-top: 15px;
+}
+
+.thanks-message {
+  text-align: center;
+  font-size: 15px;
+}
+
+@media (min-width: 48em) {
+  .box {
+    width: 25%;
+    margin-top: 300px;
+  }
+}
