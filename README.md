@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/thisisyinka/interactive-rating-component)
-- Live Site URL: [Add live site URL here](https://thisisyinka.github.io/interactive-rating-component/)
+- Solution URL: [GitHub Repo](https://github.com/thisisyinka/interactive-rating-component)
+- Live Site URL: [Live version](https://thisisyinka.github.io/interactive-rating-component/)
 
 ### Built with
 
@@ -48,5 +48,5 @@ Users should be able to:
 
 ## Author
 
-- Email - [layinkawebdev@gmail.com](mailto:layinkajaji@gmail.com)
+- GitHub - [@thisisyinka](https://github.com/thisisyinka)
 - Frontend Mentor - [@thisisyinka](https://www.frontendmentor.io/profile/thisisyinka)
