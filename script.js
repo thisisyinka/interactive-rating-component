@@ -5,38 +5,34 @@ const ratingText = document.querySelector('.rating-text');
 const containerDiv = document.querySelector('.container');
 const thankyouDiv = document.querySelector('.thankyou-wrapper');
 
+const ratingOne = document.querySelector('.rating-one');
+const ratingTwo = document.querySelector('.rating-two');
+const ratingThree = document.querySelector('.rating-three');
+const ratingFour = document.querySelector('.rating-four');
+const ratingFive = document.querySelector('.rating-five');
+
 const endingText = 'out of 5';
 
-//TODO: when user clicks on a rating it should show the selected stated
+// TODO: when user clicks on a rating it should show the selected stated
 ratingDiv.forEach((div) => {
   div.addEventListener('click', function () {
-    div.style.backgroundColor = 'hsl(217, 12%, 63%)';
-    div.style.color = 'hsl(0, 0%, 100%)';
-  });
-});
-
-//when the submit button is clicked, it should show the thank you screen
-submitBtn.addEventListener('click', function () {
-  allRatings.forEach((rating) => {
-    console.log(rating);
-    if (rating.textContent) {
-      submitLogic(rating);
+    if (div.childNodes[1].className) {
+      div.classList.toggle('selected');
     }
-    // } else if (rating.textContent === '2') {
-    //   submitLogic(rating);
-    // } else if (rating.textContent === '3') {
-    //   submitLogic(rating);
-    // } else if (rating.textContent === '4') {
-    //   submitLogic(rating);
-    // } else if (rating.textContent === '5') {
-    //   submitLogic(rating);
-    // }
+    console.log('the div', div);
+    console.log('child nodes', div.childNodes);
+    console.log('child nodes 2nd arr', div.childNodes[1]);
+
+    submitBtn.addEventListener('click', function () {
+      if (div.childNodes[1].firstChild.textContent) {
+        submitLogic(div.childNodes[1].firstChild.textContent);
+      }
+    });
   });
 });
 
 const submitLogic = (rating) => {
-  //   console.log(`You rated this only ${rating.textContent}!`);
-  ratingText.textContent = `You selected ${rating.textContent} ${endingText}`;
+  ratingText.textContent = `You selected ${rating} ${endingText}`;
   containerDiv.classList.remove('container');
   containerDiv.classList.add('container-hide');
   thankyouDiv.classList.add('thankyou-wrapper-show');
